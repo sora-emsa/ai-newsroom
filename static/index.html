@@ -3,21 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🏢 AI Newsroom — Pixel Art Virtual Office</title>
+  <title>🏢 AI Newsroom — 3D Isometric Virtual Office</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="pixel_avatars.css">
+  <link rel="stylesheet" href="isometric.css">
 </head>
 <body>
   <div class="newsroom-container">
     <!-- TOP STATUS HEADER -->
     <header class="retro-header">
       <div class="header-left">
-        <div class="pixel-logo">📰 AI NEWSROOM HQ</div>
+        <div class="pixel-logo">📰 AI NEWSROOM HQ (3D)</div>
         <div class="status-pill" id="system-status"><span class="dot"></span> READY</div>
-        <a href="https://github.com/sora-emsa/ai-newsroom" target="_blank" class="github-badge">🐙 GITHUB REPO</a>
+        <a href="https://github.com/sora-emsa/ai-newsroom" target="_blank" class="github-badge">🐙 GITHUB</a>
         <a href="https://ai-newsroom-three.vercel.app" target="_blank" class="vercel-badge">▲ VERCEL LIVE</a>
       </div>
       <div class="header-center">
@@ -37,119 +38,154 @@
       </div>
     </header>
 
-    <!-- PIXEL VIRTUAL OFFICE ROOM -->
-    <main class="pixel-room-viewport">
-      <div class="room-decor wall">
-        <div class="clock-display" id="office-clock">00:00:00</div>
-        <div class="board-sign">🔴 100% BAHASA INDONESIA AI NEWSROOM • MULTI-RSS (INDIATIMES, BBC, CNBC, ANTARA)</div>
-        <div class="categories-tag">📊 EKONOMI • 🏥 KESEHATAN • 🌐 GEOPOLITIK</div>
-      </div>
+    <!-- 3D ISOMETRIC VIRTUAL OFFICE VIEWPORT -->
+    <main class="iso-viewport">
+      <!-- 3D ROOM WORLD CONTAINER -->
+      <div class="iso-room-world" id="iso-world">
+        <!-- 3D FLOOR GRID -->
+        <div class="iso-floor"></div>
 
-      <!-- INTERACTIVE HUMAN WALKING ROOM FLOOR -->
-      <div class="room-floor" id="room-floor-canvas">
-        <!-- ROOM PROPS & FURNITURE -->
-        <div class="room-prop prop-coffee" style="left: 3%; top: 12px;">
-          <div class="prop-icon">☕</div>
-          <div class="prop-label">COFFEE BAR</div>
-        </div>
-
-        <div class="room-prop prop-water" style="left: 12%; top: 12px;">
-          <div class="prop-icon">🚰</div>
-          <div class="prop-label">WATER COOLER</div>
+        <!-- 3D PROPS -->
+        <!-- Coffee Bar Station -->
+        <div class="iso-desk" style="left: 40px; top: 30px;">
+          <div class="cube-top">☕ COFFEE</div>
+          <div class="cube-front"></div>
+          <div class="cube-side"></div>
         </div>
 
-        <div class="room-prop prop-server" style="right: 3%; top: 12px;">
-          <div class="prop-icon">🗄️<span class="server-led"></span></div>
-          <div class="prop-label">9ROUTER RACK</div>
+        <!-- Water Cooler -->
+        <div class="iso-desk" style="left: 140px; top: 30px;">
+          <div class="cube-top">🚰 WATER</div>
+          <div class="cube-front"></div>
+          <div class="cube-side"></div>
         </div>
 
-        <div class="room-prop prop-board" style="right: 14%; top: 12px;">
-          <div class="prop-icon">📋</div>
-          <div class="prop-label">KANBAN BOARD</div>
+        <!-- 9Router 3D Server Rack -->
+        <div class="iso-prop prop-server" style="right: 35px; top: 30px;">
+          <div class="cube-top"><span class="server-led"></span></div>
+          <div class="cube-front">9ROUTER ⚡</div>
+          <div class="cube-side"></div>
         </div>
 
-        <!-- FIXED WORKSTATIONS (DESKS) -->
-        <div class="desk-station" id="desk-chronos" style="left: 5%; top: 140px;">
-          <div class="desk-screen">📅 CHRONOS</div>
-        </div>
-        <div class="desk-station" id="desk-radar" style="left: 19%; top: 140px;">
-          <div class="desk-screen radar-screen">📶 RADAR RSS</div>
-        </div>
-        <div class="desk-station" id="desk-babel" style="left: 33%; top: 140px;">
-          <div class="desk-screen">🗣️ BABEL TR</div>
-        </div>
-        <div class="desk-station" id="desk-quill" style="left: 47%; top: 140px;">
-          <div class="desk-screen">📝 QUILL 5W1H</div>
-        </div>
-        <div class="desk-station" id="desk-sentinel" style="left: 61%; top: 140px;">
-          <div class="desk-screen">🔍 SENTINEL</div>
-        </div>
-        <div class="desk-station" id="desk-press" style="left: 75%; top: 140px;">
-          <div class="desk-screen">🚀 PRESS TG</div>
-        </div>
-        <div class="desk-station" id="desk-nexus" style="left: 88%; top: 140px;">
-          <div class="desk-screen">☁️ NEXUS VC</div>
+        <!-- Kanban Board -->
+        <div class="iso-desk" style="right: 120px; top: 30px;">
+          <div class="cube-top">📋 KANBAN</div>
+          <div class="cube-front"></div>
+          <div class="cube-side"></div>
         </div>
 
-        <!-- BOSS CORNER DESK -->
-        <div class="desk-station desk-boss-fixed" style="right: 6%; bottom: 15px;">
-          <div class="desk-screen boss-screen">👑 BOSS DESK (YOU)</div>
+        <!-- 3D DESKS (7 AGENT DESKS) -->
+        <div class="iso-desk" style="left: 40px; top: 140px;">
+          <div class="cube-top">📅 CHRONOS</div>
+          <div class="cube-front"></div>
+          <div class="cube-side"></div>
         </div>
 
-        <!-- AUTHENTIC HUMAN PIXEL AGENTS -->
+        <div class="iso-desk" style="left: 130px; top: 140px;">
+          <div class="cube-top">📶 RADAR</div>
+          <div class="cube-front"></div>
+          <div class="cube-side"></div>
+        </div>
+
+        <div class="iso-desk" style="left: 220px; top: 140px;">
+          <div class="cube-top">🗣️ BABEL</div>
+          <div class="cube-front"></div>
+          <div class="cube-side"></div>
+        </div>
+
+        <div class="iso-desk" style="left: 310px; top: 140px;">
+          <div class="cube-top">📝 QUILL</div>
+          <div class="cube-front"></div>
+          <div class="cube-side"></div>
+        </div>
+
+        <div class="iso-desk" style="left: 400px; top: 140px;">
+          <div class="cube-top">🔍 SENTINEL</div>
+          <div class="cube-front"></div>
+          <div class="cube-side"></div>
+        </div>
+
+        <div class="iso-desk" style="left: 490px; top: 140px;">
+          <div class="cube-top">🚀 PRESS</div>
+          <div class="cube-front"></div>
+          <div class="cube-side"></div>
+        </div>
+
+        <div class="iso-desk" style="left: 580px; top: 140px;">
+          <div class="cube-top">☁️ NEXUS</div>
+          <div class="cube-front"></div>
+          <div class="cube-side"></div>
+        </div>
+
+        <!-- 3D BOSS EXECUTIVE DESK -->
+        <div class="iso-desk desk-boss" style="right: 50px; bottom: 40px;">
+          <div class="cube-top">👑 BOSS DESK</div>
+          <div class="cube-front"></div>
+          <div class="cube-side"></div>
+        </div>
+
+        <!-- 3D ISOMETRIC HUMAN AGENT CHARACTERS (BILLBOARDS IN 3D SPACE) -->
         <!-- 0. CHRONOS -->
-        <div class="agent-entity" id="agent-chronos">
-          <div class="speech-bubble" id="bubble-chronos">Siaga memantau jadwal 2 jam.</div>
+        <div class="iso-agent" id="agent-chronos">
+          <div class="iso-speech-bubble" id="bubble-chronos">Siaga memantau jadwal 2 jam.</div>
           <div class="pixel-human" id="sprite-container-chronos"></div>
+          <div class="human-shadow"></div>
           <div class="agent-name">0. Chronos</div>
         </div>
 
         <!-- 1. RADAR -->
-        <div class="agent-entity" id="agent-radar">
-          <div class="speech-bubble" id="bubble-radar">Memindai IndiaTimes, BBC, CNBC...</div>
+        <div class="iso-agent" id="agent-radar">
+          <div class="iso-speech-bubble" id="bubble-radar">Memindai IndiaTimes & global...</div>
           <div class="pixel-human" id="sprite-container-radar"></div>
+          <div class="human-shadow"></div>
           <div class="agent-name">1. Radar</div>
         </div>
 
         <!-- 2. BABEL -->
-        <div class="agent-entity" id="agent-babel">
-          <div class="speech-bubble" id="bubble-babel">100% Bahasa Indonesia siap.</div>
+        <div class="iso-agent" id="agent-babel">
+          <div class="iso-speech-bubble" id="bubble-babel">100% Bahasa Indonesia siap.</div>
           <div class="pixel-human" id="sprite-container-babel"></div>
+          <div class="human-shadow"></div>
           <div class="agent-name">2. Babel</div>
         </div>
 
         <!-- 3. QUILL -->
-        <div class="agent-entity" id="agent-quill">
-          <div class="speech-bubble" id="bubble-quill">Meringkas poin 5W+1H.</div>
+        <div class="iso-agent" id="agent-quill">
+          <div class="iso-speech-bubble" id="bubble-quill">Meringkas poin 5W+1H.</div>
           <div class="pixel-human" id="sprite-container-quill"></div>
+          <div class="human-shadow"></div>
           <div class="agent-name">3. Quill</div>
         </div>
 
         <!-- 4. SENTINEL -->
-        <div class="agent-entity" id="agent-sentinel">
-          <div class="speech-bubble" id="bubble-sentinel">Audit anti-duplikasi & fakta OK.</div>
+        <div class="iso-agent" id="agent-sentinel">
+          <div class="iso-speech-bubble" id="bubble-sentinel">Audit anti-duplikasi & fakta OK.</div>
           <div class="pixel-human" id="sprite-container-sentinel"></div>
+          <div class="human-shadow"></div>
           <div class="agent-name">4. Sentinel</div>
         </div>
 
         <!-- 5. PRESS -->
-        <div class="agent-entity" id="agent-press">
-          <div class="speech-bubble" id="bubble-press">Telegram bot terhubung.</div>
+        <div class="iso-agent" id="agent-press">
+          <div class="iso-speech-bubble" id="bubble-press">Telegram bot terhubung.</div>
           <div class="pixel-human" id="sprite-container-press"></div>
+          <div class="human-shadow"></div>
           <div class="agent-name">5. Press</div>
         </div>
 
         <!-- 6. NEXUS -->
-        <div class="agent-entity" id="agent-nexus">
-          <div class="speech-bubble" id="bubble-nexus">Vercel & GitHub sync aktif.</div>
+        <div class="iso-agent" id="agent-nexus">
+          <div class="iso-speech-bubble" id="bubble-nexus">Vercel & GitHub sync aktif.</div>
           <div class="pixel-human" id="sprite-container-nexus"></div>
+          <div class="human-shadow"></div>
           <div class="agent-name">6. Nexus</div>
         </div>
 
-        <!-- BOSS -->
-        <div class="agent-entity boss-entity" id="agent-boss">
-          <div class="speech-bubble boss-bubble">Monitoring live performance! ☕</div>
+        <!-- BOSS (YOU) -->
+        <div class="iso-agent boss-agent" id="agent-boss">
+          <div class="iso-speech-bubble boss-bubble" id="bubble-boss">Monitoring live performance! ☕</div>
           <div class="pixel-human" id="sprite-container-boss"></div>
+          <div class="human-shadow"></div>
           <div class="agent-name">Boss (You)</div>
         </div>
       </div>
@@ -160,11 +196,11 @@
       <!-- PANEL 1: TELEGRAM LIVE SIMULATOR -->
       <div class="card-panel telegram-panel">
         <div class="panel-header">
-          <span class="panel-title">📱 TELEGRAM LIVE FEED (@EmsaHermesBot)</span>
+          <span class="panel-title">📱 TELEGRAM CONSOLIDATED DIGEST (@EmsaHermesBot)</span>
           <span class="tg-chat-target">Chat ID: 7723304444</span>
         </div>
         <div class="telegram-chat-window" id="tg-messages-container">
-          <div class="tg-placeholder">Menunggu siaran berita terkini...</div>
+          <div class="tg-placeholder">Menunggu siaran ringkasan berita 2 jam...</div>
         </div>
       </div>
 
@@ -172,7 +208,7 @@
       <div class="card-panel news-panel">
         <div class="panel-header">
           <span class="panel-title">📰 BERITA TERKURASI TERAKHIR (100% BAHASA INDONESIA)</span>
-          <span class="badge-filter">Strict No-Duplicate • Realtime</span>
+          <span class="badge-filter">Zero-Duplicate • 2026 Live</span>
         </div>
         <div class="news-list" id="curated-news-list">
           <div class="empty-state">Memuat data berita terupdate...</div>

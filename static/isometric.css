@@ -1,0 +1,250 @@
+/* ================= 3D ISOMETRIC NEWSROOM STYLES ================= */
+.iso-viewport {
+  perspective: 1000px;
+  overflow: hidden;
+  padding: 30px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 440px;
+  background: radial-gradient(circle at 50% 40%, #1e293b 0%, #090d16 100%);
+  position: relative;
+}
+
+.iso-room-world {
+  position: relative;
+  width: 720px;
+  height: 380px;
+  transform: rotateX(56deg) rotateZ(-45deg);
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease;
+}
+
+/* 3D FLOOR TILES WITH DEPTH */
+.iso-floor {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #1e293b;
+  background-image: 
+    linear-gradient(to right, rgba(51, 65, 85, 0.4) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(51, 65, 85, 0.4) 1px, transparent 1px);
+  background-size: 40px 40px;
+  box-shadow: 
+    -20px 20px 0px #0f172a,
+    -25px 25px 30px rgba(0, 0, 0, 0.8);
+  border: 2px solid #475569;
+}
+
+/* 3D ISOMETRIC VOXEL OBJECTS (DESKS, PROPS) */
+.iso-object {
+  position: absolute;
+  transform-style: preserve-3d;
+  z-index: 10;
+}
+
+/* 3D DESK VOXEL BOX */
+.iso-desk {
+  width: 70px;
+  height: 45px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+.iso-desk .cube-top {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #334155;
+  border: 1px solid #64748b;
+  transform: translateZ(20px);
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--pixel-font);
+  font-size: 13px;
+  color: #38bdf8;
+}
+
+.iso-desk.desk-boss .cube-top {
+  background: #854d0e;
+  border-color: #facc15;
+  color: #fef08a;
+  width: 90px;
+  height: 55px;
+}
+
+.iso-desk .cube-front {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  bottom: -20px;
+  left: 0;
+  background: #1e293b;
+  border: 1px solid #334155;
+  transform-origin: top;
+  transform: rotateX(-90deg);
+}
+
+.iso-desk .cube-side {
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  right: -20px;
+  top: 0;
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  transform-origin: left;
+  transform: rotateY(90deg);
+}
+
+/* 3D PROPS (COFFEE, SERVER RACK, KANBAN) */
+.iso-prop {
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+.iso-prop.prop-server {
+  width: 50px;
+  height: 50px;
+}
+
+.iso-prop.prop-server .cube-top {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #0f172a;
+  border: 1px solid #10b981;
+  transform: translateZ(40px);
+}
+
+.iso-prop.prop-server .cube-front {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  bottom: -40px;
+  left: 0;
+  background: #022c22;
+  border: 1px solid #059669;
+  transform-origin: top;
+  transform: rotateX(-90deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8px;
+  color: #34d399;
+  font-family: var(--header-font);
+}
+
+.iso-prop.prop-server .cube-side {
+  position: absolute;
+  width: 40px;
+  height: 100%;
+  right: -40px;
+  top: 0;
+  background: #064e3b;
+  border: 1px solid #047857;
+  transform-origin: left;
+  transform: rotateY(90deg);
+}
+
+/* 3D ISOMETRIC HUMAN AGENT (FACING 3D 3/4 PERSPECTIVE) */
+.iso-agent {
+  position: absolute;
+  width: 32px;
+  height: 44px;
+  transform-style: preserve-3d;
+  transform: translateZ(20px) rotateZ(45deg) rotateX(-56deg); /* Upright Billboard in 3D world */
+  transition: left 2.2s cubic-bezier(0.25, 1, 0.5, 1), top 2.2s cubic-bezier(0.25, 1, 0.5, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+  z-index: 20;
+}
+
+.iso-agent .human-shadow {
+  position: absolute;
+  bottom: -4px;
+  width: 26px;
+  height: 12px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  filter: blur(2px);
+  z-index: -1;
+}
+
+.iso-agent.walking .human-leg-l {
+  animation: walk-leg-left 0.28s infinite alternate ease-in-out;
+}
+
+.iso-agent.walking .human-leg-r {
+  animation: walk-leg-right 0.28s infinite alternate ease-in-out;
+}
+
+.iso-agent.walking .human-head,
+.iso-agent.walking .human-body {
+  animation: human-bob 0.28s infinite alternate ease-in-out;
+}
+
+.iso-agent.flip-left .pixel-human {
+  transform: scaleX(-1);
+}
+
+.iso-agent.flip-right .pixel-human {
+  transform: scaleX(1);
+}
+
+/* 3D POPUP SPEECH BUBBLE */
+.iso-speech-bubble {
+  position: absolute;
+  bottom: 58px;
+  background: #ffffff;
+  color: #0f172a;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 11.5px;
+  font-weight: 600;
+  min-width: 130px;
+  max-width: 190px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  border: 2px solid #0f172a;
+  z-index: 50;
+  line-height: 1.25;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.7) translateY(8px);
+  transition: opacity 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), 
+              transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+              visibility 0.3s;
+}
+
+.iso-speech-bubble.active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1) translateY(0);
+}
+
+.iso-speech-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 7px 7px 0;
+  border-style: solid;
+  border-color: #ffffff transparent;
+  display: block;
+  width: 0;
+}
+
+.iso-speech-bubble.boss-bubble {
+  background: #fef08a;
+  border-color: #854d0e;
+}
+.iso-speech-bubble.boss-bubble::after {
+  border-color: #fef08a transparent;
+}

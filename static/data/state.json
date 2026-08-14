@@ -1,7 +1,7 @@
 {
-  "status": "idle",
-  "last_run": "2026-08-15 01:22:13",
-  "next_run": "2026-08-15 03:22:13",
+  "status": "running",
+  "last_run": "2026-08-15 01:26:33",
+  "next_run": "2026-08-15 03:26:33",
   "agents": {
     "chronos": {
       "status": "active",
@@ -10,7 +10,7 @@
     },
     "radar": {
       "status": "done",
-      "speech": "Ditemukan (Times of India World): 'Male redback spiders some...'",
+      "speech": "Ditemukan (The Economic Times (IndiaTimes)): 'Forex reserves soar to $7...'",
       "action": "walking_to_babel"
     },
     "babel": {
@@ -25,16 +25,61 @@
     },
     "sentinel": {
       "status": "done",
-      "speech": "Audit: LOLOS (100% ID & Teruji Fakta) ✅",
-      "action": "walking_to_press"
+      "speech": "Audit diverifikasi.",
+      "action": "idle"
     },
     "press": {
       "status": "done",
-      "speech": "Berita Geopolitik terkirim ke Telegram! 🚀",
+      "speech": "Executive Digest terkirim ke Telegram Boss! 🚀",
       "action": "walking_to_boss"
     }
   },
   "latest_news": [
+    {
+      "category": "Ekonomi",
+      "title": "Ambisi Besar India dalam Industri Cip: Mampukah Menjadi Pusat Semikonduktor Dunia Berikutnya?",
+      "source": "Times of India Business",
+      "url": "https://timesofindia.indiatimes.com/business/india-business/indias-big-chip-ambition-can-it-become-the-worlds-next-semiconductor-hub/articleshow/133242009.cms",
+      "pub_date": "14 Agu 2026, 20:29 WIB",
+      "tldr": "India berambisi menjadi pusat semikonduktor dunia dengan membangun ekosistem cip yang mandiri. Langkah strategis ini ditujukan untuk mengurangi ketergantungan pada impor di tengah ketidakpastian ekonomi dan geopolitik global.",
+      "points": [
+        "Semikonduktor menjadi fondasi bagi industri kunci, seperti elektronik, kendaraan listrik, kecerdasan buatan, dan pertahanan, sehingga penguasaan rantai pasoknya sangat krusial.",
+        "India berupaya membangun ekosistem semikonduktor yang mandiri agar tidak rentan terhadap gejolak geopolitik dan gangguan rantai pasok global.",
+        "Ambisi ini berpotensi menjadikan India salah satu kandidat pusat manufaktur cip dunia berikutnya, seiring pergeseran lanskap produksi semikonduktor global."
+      ],
+      "impact": "Jika berhasil, India dapat memperkuat ketahanan ekonomi dan teknologinya, menarik investasi besar, serta mengubah peta persaingan semikonduktor global yang selama ini didominasi oleh segelintir negara.",
+      "time": "01:23 WIB"
+    },
+    {
+      "category": "Kesehatan",
+      "title": "Peringatan Gerhana Matahari: Tanda-Tanda Utama Kerusakan Mata",
+      "source": "BBC Health",
+      "url": "https://www.bbc.co.uk/news/articles/c4gk0dq81j2o?at_medium=RSS&at_campaign=rss",
+      "pub_date": "15 Aug 2026, 01:23 WIB",
+      "tldr": "Melihat gerhana matahari tanpa kacamata khusus dapat merusak mata secara permanen, dengan gejala awal berupa penglihatan kabur yang sering tidak langsung terasa.",
+      "points": [
+        "Gejala utama kerusakan mata setelah melihat gerhana tanpa pelindung adalah penglihatan kabur atau buram.",
+        "Kerusakan dapat terjadi tanpa rasa sakit, sehingga banyak orang tidak menyadari dampaknya hingga terlambat.",
+        "Gunakan kacamata gerhana bersertifikat atau metode tidak langsung untuk melindungi mata selama pengamatan."
+      ],
+      "impact": "Peringatan ini penting untuk mencegah kebutaan permanen dan meningkatkan kesadaran publik agar tidak mengabaikan keselamatan mata saat menyaksikan fenomena gerhana.",
+      "time": "01:23 WIB"
+    },
+    {
+      "category": "Geopolitik",
+      "title": "Laba-laba punggung merah jantan berjungkir balik menuju taring betina saat kawin",
+      "source": "Times of India World",
+      "url": "https://timesofindia.indiatimes.com/science/male-redback-spiders-somersault-directly-towards-a-females-fangs-during-mating-scientists-found-the-bizarre-behaviour-may-come-from-surprisingly-simple-genetics/articleshow/133245107.cms",
+      "pub_date": "14 Agu 2026, 23:00 WIB",
+      "tldr": "Penelitian terbaru menemukan bahwa perilaku jungkir balik laba-laba punggung merah jantan saat kawin diatur oleh satu wilayah genetik pada kromosom X dan bersifat resesif. Adapun penyempitan perut dipengaruhi oleh banyak gen serta faktor lingkungan, sehingga menantang anggapan lama tentang kompleksitas genetik.",
+      "points": [
+        "Satu wilayah genetik pada kromosom X mengendalikan perilaku jungkir balik rumit laba-laba punggung merah jantan selama ritual kawin.",
+        "Eksperimen persilangan membuktikan bahwa sifat jungkir balik tersebut bersifat resesif dan terpaut kromosom X.",
+        "Penyempitan perut tidak dikendalikan oleh satu gen tunggal, melainkan oleh kombinasi banyak gen dan lingkungan, sehingga memperumit pemahaman tentang pewarisan sifat genetik."
+      ],
+      "impact": "Temuan ini memperdalam pemahaman tentang bagaimana perilaku kompleks yang penting bagi reproduksi dapat diwariskan secara genetik, sekaligus menantang pandangan tradisional bahwa sifat yang dipengaruhi banyak gen pasti lebih kompleks. Hasil ini berimplikasi pada studi evolusi perilaku dan genetika kuantitatif.",
+      "time": "01:24 WIB"
+    },
     {
       "category": "Ekonomi",
       "title": "India Incar Kesepakatan Berbagi Data dengan AS untuk Memperketat Pemberantasan Konten Pelecehan Seksual Anak",
