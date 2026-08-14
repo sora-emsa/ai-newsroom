@@ -1,47 +1,50 @@
 {
-  "updated_at": "2026-08-15 01:11:38 WIB",
+  "updated_at": "2026-08-15 01:20:04 WIB",
   "news": [
     {
       "category": "Ekonomi",
-      "title": "Cara Mengajukan Klaim Asuransi Mobil: Syarat, Dokumen, dan Prosedur",
-      "source": "Antara Ekonomi",
-      "url": "https://otomotif.antaranews.com/berita/5690216/cara-klaim-asuransi-mobil-syarat-dokumen-dan-prosedurnya",
-      "tldr": "Klaim asuransi mobil wajib dilengkapi dokumen lengkap dan prosedur yang tepat agar proses pencairan berjalan lancar tanpa hambatan.",
+      "title": "India incar perjanjian berbagi data dengan AS untuk memperketat pemberantasan konten pelecehan anak",
+      "source": "The Economic Times (IndiaTimes)",
+      "url": "https://economictimes.indiatimes.com/news/india/india-eyes-data-sharing-pact-with-us-to-tighten-csam-crackdown/articleshow/133249836.cms",
+      "pub_date": "15 Agu 2026, 01:10 WIB",
+      "tldr": "India mendorong perjanjian berbagi data dengan AS untuk mempercepat penanganan laporan konten pelecehan anak, mengatasi keterlambatan CyberTipline NCMEC yang menghambat investigasi.",
       "points": [
-        "Syarat utama klaim meliputi polis aktif, laporan kepolisian untuk kecelakaan, dan bukti kejadian seperti foto atau surat keterangan.",
-        "Dokumen yang harus disiapkan antara lain KTP, STNK, SIM, formulir klaim, dan estimasi biaya perbaikan dari bengkel rekanan.",
-        "Prosedur klaim umumnya dimulai dari pelaporan ke perusahaan asuransi, verifikasi oleh petugas, survei kendaraan, hingga persetujuan pembayaran atau perbaikan."
+        "India memerlukan perjanjian formal berbagi data dengan AS agar laporan dari platform media sosial dapat diproses lebih cepat.",
+        "Keterlambatan CyberTipline NCMEC dalam mengirimkan laporan ke India menjadi hambatan utama, mendorong usulan pembagian metadata sementara.",
+        "Kolaborasi antara platform, NCMEC, dan I4C (Indian Cyber Crime Coordination Centre) dinilai penting untuk menyelesaikan perbedaan prosedur."
       ],
-      "impact": "Pemahaman yang tepat atas syarat dan prosedur klaim membantu pemilik kendaraan menghindari penolakan klaim serta mempercepat pemulihan finansial dan mobilitas setelah kerugian.",
-      "time": "01:09 WIB"
+      "impact": "Perjanjian ini akan memperkuat penegakan hukum India dalam memberantas materi pelecehan anak, mengurangi risiko keterlambatan investigasi, dan melindungi korban lebih cepat melalui respons lintas batas yang lebih efisien.",
+      "time": "01:18 WIB"
     },
     {
       "category": "Kesehatan",
-      "title": "Peringatan Gerhana: Tanda-tanda Utama Kerusakan Mata",
-      "source": "BBC Health",
-      "url": "https://www.bbc.co.uk/news/articles/c4gk0dq81j2o?at_medium=RSS&at_campaign=rss",
-      "tldr": "Melihat matahari langsung saat gerhana tanpa kacamata gerhana dapat merusak retina dan menyebabkan penglihatan kabur, bahkan permanen. Gejala utama yang perlu diwaspadai adalah penurunan ketajaman penglihatan setelah paparan.",
+      "title": "10 Obat Rumahan untuk Membantu Mencegah Flu Babi",
+      "source": "Times of India Health",
+      "url": "https://timesofindia.indiatimes.com/10-home-remedies-to-avoid-swine-flu/articleshow/4888598.cms",
+      "pub_date": "16 Feb 2015, 12:45 WIB",
+      "tldr": "Meski jumlah kasus flu babi meningkat, masyarakat tidak perlu panik. Berbagai obat rumahan dapat membantu memperkuat daya tahan tubuh dan meredakan gejala ringan, tetapi tetap bukan pengganti penanganan medis.",
       "points": [
-        "Paparan sinar matahari tanpa pelindung saat gerhana dapat membakar sel retina dan mengganggu penglihatan sentral.",
-        "Gejala kerusakan mata tidak selalu langsung terasa; penglihatan kabur atau bintik buta bisa muncul beberapa jam hingga beberapa hari setelahnya.",
-        "Menggunakan kacamata gerhana bersertifikasi ISO 12312-2 adalah satu-satunya cara aman untuk melihat gerhana matahari secara langsung."
+        "Konsumsi makanan bergizi seperti bawang putih, jahe, dan madu dapat membantu memperkuat sistem kekebalan tubuh dalam melawan infeksi virus flu babi.",
+        "Istirahat cukup, minum air yang cukup, serta menjaga kebersihan tangan dan lingkungan adalah langkah rumahan yang paling efektif untuk mencegah penularan.",
+        "Obat rumahan hanya bersifat pendukung; jika muncul gejala berat seperti demam tinggi atau kesulitan bernapas, segera cari pertolongan medis."
       ],
-      "impact": "Kesadaran global akan bahaya kerusakan mata akibat gerhana penting untuk mencegah kebutaan permanen, terutama karena peristiwa gerhana menarik banyak orang untuk melihat tanpa perlindungan yang memadai.",
-      "time": "01:11 WIB"
+      "impact": "Informasi ini penting untuk mengurangi kecemasan masyarakat dan memberikan langkah pencegahan yang mudah dilakukan di rumah, sekaligus mengingatkan bahwa kewaspadaan dan akses ke layanan kesehatan tetap menjadi prioritas utama.",
+      "time": "01:18 WIB"
     },
     {
       "category": "Geopolitik",
-      "title": "Aktivis Berupaya Menyalurkan Bantuan kepada Warga Palestina yang Rumahnya Dikepung Pemukim Israel",
-      "source": "BBC World News",
-      "url": "https://www.bbc.co.uk/news/articles/c1w1ylw0p3no?at_medium=RSS&at_campaign=rss",
-      "tldr": "Aktivis berupaya menyalurkan bantuan kepada dua keluarga Palestina di Tepi Barat yang diduduki yang terperangkap di rumah mereka setelah dikepung oleh pemukim Israel selama beberapa hari.",
+      "title": "Mahkamah Agung Prancis Tolak Larangan Media Sosial untuk Anak di Bawah 15 Tahun, Sebut Kekhawatiran Konstitusional",
+      "source": "Times of India World",
+      "url": "https://timesofindia.indiatimes.com/world/europe/frances-top-court-blocks-under-15-social-media-ban-cites-constitutional-concerns/articleshow/133249015.cms",
+      "pub_date": "15 Agu 2026, 00:46 WIB",
+      "tldr": "Mahkamah Agung Prancis menolak rancangan undang-undang yang melarang anak di bawah 15 tahun menggunakan media sosial karena dinilai bertentangan dengan hak privasi dan hak-hak mendasar. Presiden Macron pun mendesak revisi cepat agar larangan yang lebih kuat dapat berlaku pada musim semi 2027.",
       "points": [
-        "Dua keluarga Palestina telah terperangkap di rumah mereka di Tepi Barat akibat pengepungan oleh pemukim Israel.",
-        "Aktivis tengah berusaha menembus blokade untuk menyalurkan bantuan kemanusiaan kepada warga yang terjebak.",
-        "Peristiwa ini menyoroti meningkatnya ketegangan dan kekerasan pemukim di wilayah pendudukan Tepi Barat."
+        "RUU larangan media sosial untuk anak di bawah 15 tahun ditolak Mahkamah Agung Prancis karena masalah konstitusional, terutama terkait privasi dan hak-hak mendasar.",
+        "Pemerintah Prancis di bawah Presiden Macron berkomitmen merevisi rancangan undang-undang tersebut untuk menciptakan kerangka perlindungan anak yang lebih kuat.",
+        "Target pemberlakuan larangan yang diperbarui dijadwalkan pada musim semi 2027, setelah revisi disesuaikan dengan tuntutan konstitusi."
       ],
-      "impact": "Peristiwa ini menyoroti kerentanan warga sipil Palestina di Tepi Barat dan berpotensi memicu eskalasi konflik yang lebih luas, serta menarik perhatian internasional terhadap situasi hak asasi manusia dan hukum pendudukan.",
-      "time": "01:11 WIB"
+      "impact": "Keputusan ini menunjukkan bahwa upaya melindungi anak di ruang digital harus diseimbangkan dengan hak-hak konstitusional, sehingga pembuat kebijakan perlu merancang aturan yang lebih presisi tanpa melanggar privasi. Jika revisi berhasil, Prancis dapat menjadi acuan bagi negara lain dalam menyusun regulasi media sosial yang ramah anak dan tetap konstitusional.",
+      "time": "01:20 WIB"
     }
   ]
 }
