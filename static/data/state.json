@@ -1,0 +1,61 @@
+{
+  "status": "running",
+  "last_run": "2026-08-15 01:07:35",
+  "next_run": "2026-08-15 03:07:35",
+  "agents": {
+    "chronos": {
+      "status": "active",
+      "speech": "Memulai siklus kurasi berita 2 jam..."
+    },
+    "radar": {
+      "status": "done",
+      "speech": "Menemukan berita Geopolitik: 'Activists try to deliver aid t...'"
+    },
+    "babel": {
+      "status": "done",
+      "speech": "100% Terjemahan Bahasa Indonesia selesai."
+    },
+    "quill": {
+      "status": "done",
+      "speech": "Ringkasan & poin inti berhasil diekstrak."
+    },
+    "sentinel": {
+      "status": "done",
+      "speech": "Audit Kualitas: LOLOS (100% Bahasa Indonesia & Fakta Valid) ✅"
+    },
+    "press": {
+      "status": "done",
+      "speech": "Berita Geopolitik (Bahasa Indonesia) terkirim ke Telegram! 🚀"
+    }
+  },
+  "latest_news": [
+    {
+      "category": "Kesehatan",
+      "title": "Did the eclipse damage your eyes?",
+      "source": "BBC Health",
+      "url": "https://www.bbc.co.uk/news/videos/cy452z5j1x1o?at_medium=RSS&at_campaign=rss",
+      "tldr": "An eye surgeon says that fewer people have been seeking treatment for eye damage than after the UK's last total solar eclipse in 1999.",
+      "points": [
+        "Did the eclipse damage your eyes?"
+      ],
+      "impact": "Penting untuk dipantau.",
+      "time": "01:03 WIB"
+    },
+    {
+      "category": "Geopolitik",
+      "title": "Instagram accounts fuelling Ceuta crisis with paid advice for help to cross",
+      "source": "BBC World News",
+      "url": "https://www.bbc.co.uk/news/articles/c89n20wj9kko?at_medium=RSS&at_campaign=rss",
+      "tldr": "BBC's Top Comment podcast has found a network of Instagram profiles glamourising the swim around the Morocco-Ceuta border fence.",
+      "points": [
+        "Instagram accounts fuelling Ceuta crisis with paid advice for help to cross"
+      ],
+      "impact": "Penting untuk dipantau.",
+      "time": "01:04 WIB"
+    }
+  ],
+  "token_stats": {
+    "tokens_saved_rtk": "32%",
+    "requests_routed": 0
+  }
+}
