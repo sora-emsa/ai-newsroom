@@ -1,7 +1,7 @@
 {
   "status": "running",
-  "last_run": "2026-08-15 01:26:33",
-  "next_run": "2026-08-15 03:26:33",
+  "last_run": "2026-08-15 01:29:05",
+  "next_run": "2026-08-15 03:29:05",
   "agents": {
     "chronos": {
       "status": "active",
@@ -10,13 +10,13 @@
     },
     "radar": {
       "status": "done",
-      "speech": "Ditemukan (The Economic Times (IndiaTimes)): 'Forex reserves soar to $7...'",
+      "speech": "Ditemukan (Economic Times Health (IndiaTimes)): 'Thermo Fisher finds India...'",
       "action": "walking_to_babel"
     },
     "babel": {
-      "status": "done",
-      "speech": "100% Bahasa Indonesia selesai.",
-      "action": "walking_to_quill"
+      "status": "active",
+      "speech": "Mengonversi Economic Times Health (IndiaTimes) -> 100% Bahasa Indonesia...",
+      "action": "working"
     },
     "quill": {
       "status": "done",
@@ -30,11 +30,56 @@
     },
     "press": {
       "status": "done",
-      "speech": "Executive Digest terkirim ke Telegram Boss! 🚀",
+      "speech": "Executive Digest terkirim via @EmsaNewsProBot! 🚀",
       "action": "walking_to_boss"
     }
   },
   "latest_news": [
+    {
+      "category": "Ekonomi",
+      "title": "Hari Kemerdekaan 2026: 50 Desa Pejuang Suku Akan Menampilkan Kisah Keberanian dan Pengorbanan",
+      "source": "The Economic Times (IndiaTimes)",
+      "url": "https://economictimes.indiatimes.com/news/india/independence-day-2026-50-villages-of-tribal-freedom-fighters-to-showcase-tales-of-valour-sacrifice/articleshow/133249304.cms",
+      "pub_date": "15 Agu 2026, 01:09 WIB",
+      "tldr": "Pemerintah India berencana membangun 50 desa suku sebagai museum dan monumen peringatan perjuangan kemerdekaan, dengan dana masing-masing dua juta rupee. Inisiatif ini akan dimulai di 11 desa setelah survei dasar untuk memastikan kebutuhan masyarakat.",
+      "points": [
+        "Sebanyak 50 desa suku akan dikembangkan menjadi museum dan monumen untuk mengenang keberanian pejuang kemerdekaan.",
+        "Setiap desa akan menerima alokasi dana sebesar dua juta rupee, dan pembangunan akan segera dimulai di sebelas desa terlebih dahulu.",
+        "Survei dasar akan dilakukan sebelum pembangunan untuk memastikan kebutuhan masyarakat setempat terpenuhi."
+      ],
+      "impact": "Inisiatif ini diharapkan melestarikan sejarah perjuangan suku-suku India, memperkuat identitas budaya, serta mendorong pariwisata dan pemberdayaan ekonomi masyarakat setempat.",
+      "time": "01:25 WIB"
+    },
+    {
+      "category": "Kesehatan",
+      "title": "LifeCell International Bermitra dengan Shraddha Diagnostics untuk Memperluas Layanan Diagnostik Lanjutan di Gujarat",
+      "source": "Economic Times Health (IndiaTimes)",
+      "url": "https://economictimes.indiatimes.com/industry/healthcare/biotech/healthcare/lifecell-international-partners-with-shraddha-diagnostics-to-expand-advanced-diagnostics-across-gujarat/articleshow/133228417.cms",
+      "pub_date": "14 Agu 2026, 10:45 WIB",
+      "tldr": "LifeCell International menjalin kemitraan dengan Shraddha Diagnostics untuk memperluas layanan diagnostik lanjutan di Gujarat, dengan memadukan cakupan wilayah dan keahlian diagnostik rutin Shraddha Diagnostics serta kemampuan ilmiah dan infrastruktur laboratorium LifeCell.",
+      "points": [
+        "Kemitraan ini memadukan cakupan wilayah dan jejaring dokter Shraddha Diagnostics dengan portofolio diagnostik khusus LifeCell.",
+        "LifeCell memberikan kemampuan ilmiah dan infrastruktur laboratorium berbasis teknologi dalam kerja sama ini.",
+        "Kolaborasi ini bertujuan memperluas akses masyarakat Gujarat terhadap layanan diagnostik lanjutan."
+      ],
+      "impact": "Langkah ini meningkatkan akses layanan kesehatan berbasis teknologi di Gujarat, memungkinkan deteksi dini dan penanganan lebih awal melalui diagnostik lanjutan, sekaligus memperluas pangsa pasar LifeCell di India.",
+      "time": "01:26 WIB"
+    },
+    {
+      "category": "Geopolitik",
+      "title": "Pada 2017, Konservasionis Mulai Memindahkan Elang Tiram Muda dari Skotlandia ke Dorset",
+      "source": "Times of India World",
+      "url": "https://timesofindia.indiatimes.com/world/uk/in-2017-conservationists-began-moving-young-ospreys-from-scotland-to-dorset-five-years-later-they-bred-in-southern-england-for-the-first-time-since-1847/articleshow/133245950.cms",
+      "pub_date": "14 Agu 2026, 23:47 WIB",
+      "tldr": "Pada 2017, konservasionis mulai memindahkan elang tiram muda dari Skotlandia ke Dorset dan berhasil membangun kembali populasi yang telah absen selama satu abad. Studi menunjukkan bahwa perintis buatan ini mempercepat perluasan spesies hingga puluhan tahun lebih cepat daripada kolonisasi alami.",
+      "points": [
+        "Perpindahan elang tiram muda dari Skotlandia ke Dorset berhasil menghadirkan kembali spesies setelah satu abad tidak ada di wilayah tersebut.",
+        "Pasangan perintis terbukti sangat penting karena membentuk kelompok berkembang biak terpisah yang mempercepat pertumbuhan populasi secara signifikan.",
+        "Proyek translokasi menciptakan perintis buatan, menghemat waktu puluhan tahun dibandingkan kolonisasi ulang secara alami."
+      ],
+      "impact": "Keberhasilan ini menunjukkan bahwa translokasi strategis dapat memulihkan spesies dan mempercepat perluasan wilayah. Populasi baru elang tiram di Dorset kini menyebar, menghubungkan Inggris selatan dengan populasi lain yang sudah mapan.",
+      "time": "01:27 WIB"
+    },
     {
       "category": "Ekonomi",
       "title": "Ambisi Besar India dalam Industri Cip: Mampukah Menjadi Pusat Semikonduktor Dunia Berikutnya?",
