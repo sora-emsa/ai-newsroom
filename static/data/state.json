@@ -20,12 +20,12 @@
       "speech": "Ringkasan & poin inti berhasil diekstrak."
     },
     "sentinel": {
-      "status": "active",
-      "speech": "Mengaudit akurasi fakta, EYD Bahasa Indonesia, dan netralitas..."
+      "status": "done",
+      "speech": "Audit Kualitas: LOLOS (100% Bahasa Indonesia & Fakta Valid) ✅"
     },
     "press": {
       "status": "done",
-      "speech": "Berita Kesehatan (Bahasa Indonesia) terkirim ke Telegram! 🚀"
+      "speech": "Berita Geopolitik (Bahasa Indonesia) terkirim ke Telegram! 🚀"
     }
   },
   "latest_news": [
