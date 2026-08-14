@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pixel_avatars.css">
 </head>
 <body>
   <div class="newsroom-container">
@@ -16,11 +17,12 @@
       <div class="header-left">
         <div class="pixel-logo">📰 AI NEWSROOM HQ</div>
         <div class="status-pill" id="system-status"><span class="dot"></span> READY</div>
-        <div class="vercel-badge">▲ VERCEL LIVE DEPLOY</div>
+        <a href="https://github.com/sora-emsa/ai-newsroom" target="_blank" class="github-badge">🐙 GITHUB REPO</a>
+        <a href="https://ai-newsroom-three.vercel.app" target="_blank" class="vercel-badge">▲ VERCEL LIVE</a>
       </div>
       <div class="header-center">
         <div class="timer-box">
-          <span class="timer-label">⏳ SIKLUS BERIKUTNYA:</span>
+          <span class="timer-label">⏳ SIKLUS 2 JAM:</span>
           <span class="timer-val" id="countdown-timer">--:--:--</span>
         </div>
         <div class="metric-box">
@@ -39,105 +41,116 @@
     <main class="pixel-room-viewport">
       <div class="room-decor wall">
         <div class="clock-display" id="office-clock">00:00:00</div>
-        <div class="board-sign">🔴 100% BAHASA INDONESIA AI NEWSROOM (2 JAM SEKALI)</div>
+        <div class="board-sign">🔴 100% BAHASA INDONESIA AI NEWSROOM • MULTI-RSS (INDIATIMES, BBC, CNBC, ANTARA)</div>
         <div class="categories-tag">📊 EKONOMI • 🏥 KESEHATAN • 🌐 GEOPOLITIK</div>
       </div>
 
-      <div class="room-floor">
-        <!-- 1. CHRONOS (DIRECTOR) -->
-        <div class="workstation" id="ws-chronos">
+      <!-- INTERACTIVE HUMAN WALKING ROOM FLOOR -->
+      <div class="room-floor" id="room-floor-canvas">
+        <!-- ROOM PROPS & FURNITURE -->
+        <div class="room-prop prop-coffee" style="left: 3%; top: 12px;">
+          <div class="prop-icon">☕</div>
+          <div class="prop-label">COFFEE BAR</div>
+        </div>
+
+        <div class="room-prop prop-water" style="left: 12%; top: 12px;">
+          <div class="prop-icon">🚰</div>
+          <div class="prop-label">WATER COOLER</div>
+        </div>
+
+        <div class="room-prop prop-server" style="right: 3%; top: 12px;">
+          <div class="prop-icon">🗄️<span class="server-led"></span></div>
+          <div class="prop-label">9ROUTER RACK</div>
+        </div>
+
+        <div class="room-prop prop-board" style="right: 14%; top: 12px;">
+          <div class="prop-icon">📋</div>
+          <div class="prop-label">KANBAN BOARD</div>
+        </div>
+
+        <!-- FIXED WORKSTATIONS (DESKS) -->
+        <div class="desk-station" id="desk-chronos" style="left: 5%; top: 140px;">
+          <div class="desk-screen">📅 CHRONOS</div>
+        </div>
+        <div class="desk-station" id="desk-radar" style="left: 19%; top: 140px;">
+          <div class="desk-screen radar-screen">📶 RADAR RSS</div>
+        </div>
+        <div class="desk-station" id="desk-babel" style="left: 33%; top: 140px;">
+          <div class="desk-screen">🗣️ BABEL TR</div>
+        </div>
+        <div class="desk-station" id="desk-quill" style="left: 47%; top: 140px;">
+          <div class="desk-screen">📝 QUILL 5W1H</div>
+        </div>
+        <div class="desk-station" id="desk-sentinel" style="left: 61%; top: 140px;">
+          <div class="desk-screen">🔍 SENTINEL</div>
+        </div>
+        <div class="desk-station" id="desk-press" style="left: 75%; top: 140px;">
+          <div class="desk-screen">🚀 PRESS TG</div>
+        </div>
+        <div class="desk-station" id="desk-nexus" style="left: 88%; top: 140px;">
+          <div class="desk-screen">☁️ NEXUS VC</div>
+        </div>
+
+        <!-- BOSS CORNER DESK -->
+        <div class="desk-station desk-boss-fixed" style="right: 6%; bottom: 15px;">
+          <div class="desk-screen boss-screen">👑 BOSS DESK (YOU)</div>
+        </div>
+
+        <!-- AUTHENTIC HUMAN PIXEL AGENTS -->
+        <!-- 0. CHRONOS -->
+        <div class="agent-entity" id="agent-chronos">
           <div class="speech-bubble" id="bubble-chronos">Siaga memantau jadwal 2 jam.</div>
-          <div class="character-sprite sprite-chronos">
-            <div class="pixel-char">👑</div>
-          </div>
-          <div class="desk-object desk-chronos">
-            <div class="desk-screen">📅 SCHEDULER</div>
-            <div class="char-nametag">0. CHRONOS (DIR)</div>
-          </div>
+          <div class="pixel-human" id="sprite-container-chronos"></div>
+          <div class="agent-name">0. Chronos</div>
         </div>
 
-        <!-- 2. RADAR (NEWS HUNTER) -->
-        <div class="workstation" id="ws-radar">
-          <div class="speech-bubble" id="bubble-radar">Radar scanning standby.</div>
-          <div class="character-sprite sprite-radar">
-            <div class="pixel-char">📡</div>
-          </div>
-          <div class="desk-object desk-radar">
-            <div class="desk-screen radar-screen">📶 MULTI-RSS</div>
-            <div class="char-nametag">1. RADAR (HUNTER)</div>
-          </div>
+        <!-- 1. RADAR -->
+        <div class="agent-entity" id="agent-radar">
+          <div class="speech-bubble" id="bubble-radar">Memindai IndiaTimes, BBC, CNBC...</div>
+          <div class="pixel-human" id="sprite-container-radar"></div>
+          <div class="agent-name">1. Radar</div>
         </div>
 
-        <!-- 3. BABEL (TRANSLATOR) -->
-        <div class="workstation" id="ws-babel">
-          <div class="speech-bubble" id="bubble-babel">Modul 100% Bahasa Indonesia siap.</div>
-          <div class="character-sprite sprite-babel">
-            <div class="pixel-char">🌐</div>
-          </div>
-          <div class="desk-object desk-babel">
-            <div class="desk-screen">🗣️ TRANSLATOR</div>
-            <div class="char-nametag">2. BABEL (POLYGLOT)</div>
-          </div>
+        <!-- 2. BABEL -->
+        <div class="agent-entity" id="agent-babel">
+          <div class="speech-bubble" id="bubble-babel">100% Bahasa Indonesia siap.</div>
+          <div class="pixel-human" id="sprite-container-babel"></div>
+          <div class="agent-name">2. Babel</div>
         </div>
 
-        <!-- 4. QUILL (SUMMARIZER) -->
-        <div class="workstation" id="ws-quill">
-          <div class="speech-bubble" id="bubble-quill">Menunggu draf berita masuk.</div>
-          <div class="character-sprite sprite-quill">
-            <div class="pixel-char">✍️</div>
-          </div>
-          <div class="desk-object desk-quill">
-            <div class="desk-screen">📝 5W+1H EDITOR</div>
-            <div class="char-nametag">3. QUILL (EDITOR)</div>
-          </div>
+        <!-- 3. QUILL -->
+        <div class="agent-entity" id="agent-quill">
+          <div class="speech-bubble" id="bubble-quill">Meringkas poin 5W+1H.</div>
+          <div class="pixel-human" id="sprite-container-quill"></div>
+          <div class="agent-name">3. Quill</div>
         </div>
 
-        <!-- 5. SENTINEL (AUDITOR) -->
-        <div class="workstation" id="ws-sentinel">
-          <div class="speech-bubble" id="bubble-sentinel">Sistem audit kualitas aktif.</div>
-          <div class="character-sprite sprite-sentinel">
-            <div class="pixel-char">🛡️</div>
-          </div>
-          <div class="desk-object desk-sentinel">
-            <div class="desk-screen">🔍 QA & FACT-CHECK</div>
-            <div class="char-nametag">4. SENTINEL (QA)</div>
-          </div>
+        <!-- 4. SENTINEL -->
+        <div class="agent-entity" id="agent-sentinel">
+          <div class="speech-bubble" id="bubble-sentinel">Audit anti-duplikasi & fakta OK.</div>
+          <div class="pixel-human" id="sprite-container-sentinel"></div>
+          <div class="agent-name">4. Sentinel</div>
         </div>
 
-        <!-- 6. PRESS (TELEGRAM PUBLISHER) -->
-        <div class="workstation" id="ws-press">
-          <div class="speech-bubble" id="bubble-press">Koneksi Telegram bot terhubung.</div>
-          <div class="character-sprite sprite-press">
-            <div class="pixel-char">📱</div>
-          </div>
-          <div class="desk-object desk-press">
-            <div class="desk-screen">🚀 DISPATCHER</div>
-            <div class="char-nametag">5. PRESS (LAYOUT)</div>
-          </div>
+        <!-- 5. PRESS -->
+        <div class="agent-entity" id="agent-press">
+          <div class="speech-bubble" id="bubble-press">Telegram bot terhubung.</div>
+          <div class="pixel-human" id="sprite-container-press"></div>
+          <div class="agent-name">5. Press</div>
         </div>
 
-        <!-- 7. NEXUS (GITHUB & VERCEL DEVOPS) -->
-        <div class="workstation" id="ws-nexus">
-          <div class="speech-bubble" id="bubble-nexus">Vercel & GitHub sync standby.</div>
-          <div class="character-sprite sprite-nexus">
-            <div class="pixel-char">▲</div>
-          </div>
-          <div class="desk-object desk-nexus">
-            <div class="desk-screen">☁️ VERCEL SYNC</div>
-            <div class="char-nametag">6. NEXUS (DEVOPS)</div>
-          </div>
+        <!-- 6. NEXUS -->
+        <div class="agent-entity" id="agent-nexus">
+          <div class="speech-bubble" id="bubble-nexus">Vercel & GitHub sync aktif.</div>
+          <div class="pixel-human" id="sprite-container-nexus"></div>
+          <div class="agent-name">6. Nexus</div>
         </div>
 
-        <!-- 8. BOSS DESK (USER) -->
-        <div class="workstation boss-corner" id="ws-boss">
+        <!-- BOSS -->
+        <div class="agent-entity boss-entity" id="agent-boss">
           <div class="speech-bubble boss-bubble">Monitoring live performance! ☕</div>
-          <div class="character-sprite sprite-boss">
-            <div class="pixel-char">💼</div>
-          </div>
-          <div class="desk-object desk-boss">
-            <div class="desk-screen boss-screen">👑 BOSS DESK</div>
-            <div class="char-nametag">BOSS (YOU)</div>
-          </div>
+          <div class="pixel-human" id="sprite-container-boss"></div>
+          <div class="agent-name">Boss (You)</div>
         </div>
       </div>
     </main>
@@ -159,10 +172,10 @@
       <div class="card-panel news-panel">
         <div class="panel-header">
           <span class="panel-title">📰 BERITA TERKURASI TERAKHIR (100% BAHASA INDONESIA)</span>
-          <span class="badge-filter">3 Kategori Utama</span>
+          <span class="badge-filter">Strict No-Duplicate • Realtime</span>
         </div>
         <div class="news-list" id="curated-news-list">
-          <div class="empty-state">Belum ada siklus berita yang dijalankan. Klik "RUN NEWS CYCLE NOW" di atas.</div>
+          <div class="empty-state">Memuat data berita terupdate...</div>
         </div>
       </div>
     </section>

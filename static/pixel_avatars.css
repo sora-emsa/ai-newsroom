@@ -1,0 +1,75 @@
+/* ================= HUMAN PIXEL CHARACTER SPRITES ================= */
+.pixel-human {
+  width: 32px;
+  height: 48px;
+  position: relative;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 6px 6px rgba(0, 0, 0, 0.6));
+}
+
+/* SVG Pixel Human Frame */
+.pixel-human svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+/* Walking Animations for Humans */
+.agent-entity.walking .human-leg-l {
+  animation: walk-leg-left 0.3s infinite alternate ease-in-out;
+  transform-origin: top center;
+}
+
+.agent-entity.walking .human-leg-r {
+  animation: walk-leg-right 0.3s infinite alternate ease-in-out;
+  transform-origin: top center;
+}
+
+.agent-entity.walking .human-arm-l {
+  animation: swing-arm-left 0.3s infinite alternate ease-in-out;
+  transform-origin: top center;
+}
+
+.agent-entity.walking .human-arm-r {
+  animation: swing-arm-right 0.3s infinite alternate ease-in-out;
+  transform-origin: top center;
+}
+
+.agent-entity.walking .human-body {
+  animation: human-bob 0.3s infinite alternate ease-in-out;
+}
+
+.agent-entity.typing .human-arm-l,
+.agent-entity.typing .human-arm-r {
+  animation: type-hands 0.2s infinite alternate;
+}
+
+@keyframes walk-leg-left {
+  0% { transform: rotate(-25deg); }
+  100% { transform: rotate(25deg); }
+}
+
+@keyframes walk-leg-right {
+  0% { transform: rotate(25deg); }
+  100% { transform: rotate(-25deg); }
+}
+
+@keyframes swing-arm-left {
+  0% { transform: rotate(20deg); }
+  100% { transform: rotate(-20deg); }
+}
+
+@keyframes swing-arm-right {
+  0% { transform: rotate(-20deg); }
+  100% { transform: rotate(20deg); }
+}
+
+@keyframes human-bob {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-3px); }
+}
+
+@keyframes type-hands {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-2px); }
+}
