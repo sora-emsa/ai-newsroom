@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🏢 AI Newsroom — Pixel Art Virtual Office</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="newsroom-container">
+    <!-- TOP STATUS HEADER -->
+    <header class="retro-header">
+      <div class="header-left">
+        <div class="pixel-logo">📰 AI NEWSROOM HQ</div>
+        <div class="status-pill" id="system-status"><span class="dot"></span> READY</div>
+        <div class="vercel-badge">▲ VERCEL LIVE DEPLOY</div>
+      </div>
+      <div class="header-center">
+        <div class="timer-box">
+          <span class="timer-label">⏳ SIKLUS BERIKUTNYA:</span>
+          <span class="timer-val" id="countdown-timer">--:--:--</span>
+        </div>
+        <div class="metric-box">
+          <span class="metric-label">⚡ 9ROUTER RTK:</span>
+          <span class="metric-val" id="rtk-savings">34% SAVED</span>
+        </div>
+      </div>
+      <div class="header-right">
+        <button id="btn-trigger" class="btn-pixel-action" onclick="triggerManualRun()">
+          <span class="btn-icon">⚡</span> RUN NEWS CYCLE NOW
+        </button>
+      </div>
+    </header>
+
+    <!-- PIXEL VIRTUAL OFFICE ROOM -->
+    <main class="pixel-room-viewport">
+      <div class="room-decor wall">
+        <div class="clock-display" id="office-clock">00:00:00</div>
+        <div class="board-sign">🔴 100% BAHASA INDONESIA AI NEWSROOM (2 JAM SEKALI)</div>
+        <div class="categories-tag">📊 EKONOMI • 🏥 KESEHATAN • 🌐 GEOPOLITIK</div>
+      </div>
+
+      <div class="room-floor">
+        <!-- 1. CHRONOS (DIRECTOR) -->
+        <div class="workstation" id="ws-chronos">
+          <div class="speech-bubble" id="bubble-chronos">Siaga memantau jadwal 2 jam.</div>
+          <div class="character-sprite sprite-chronos">
+            <div class="pixel-char">👑</div>
+          </div>
+          <div class="desk-object desk-chronos">
+            <div class="desk-screen">📅 SCHEDULER</div>
+            <div class="char-nametag">0. CHRONOS (DIR)</div>
+          </div>
+        </div>
+
+        <!-- 2. RADAR (NEWS HUNTER) -->
+        <div class="workstation" id="ws-radar">
+          <div class="speech-bubble" id="bubble-radar">Radar scanning standby.</div>
+          <div class="character-sprite sprite-radar">
+            <div class="pixel-char">📡</div>
+          </div>
+          <div class="desk-object desk-radar">
+            <div class="desk-screen radar-screen">📶 MULTI-RSS</div>
+            <div class="char-nametag">1. RADAR (HUNTER)</div>
+          </div>
+        </div>
+
+        <!-- 3. BABEL (TRANSLATOR) -->
+        <div class="workstation" id="ws-babel">
+          <div class="speech-bubble" id="bubble-babel">Modul 100% Bahasa Indonesia siap.</div>
+          <div class="character-sprite sprite-babel">
+            <div class="pixel-char">🌐</div>
+          </div>
+          <div class="desk-object desk-babel">
+            <div class="desk-screen">🗣️ TRANSLATOR</div>
+            <div class="char-nametag">2. BABEL (POLYGLOT)</div>
+          </div>
+        </div>
+
+        <!-- 4. QUILL (SUMMARIZER) -->
+        <div class="workstation" id="ws-quill">
+          <div class="speech-bubble" id="bubble-quill">Menunggu draf berita masuk.</div>
+          <div class="character-sprite sprite-quill">
+            <div class="pixel-char">✍️</div>
+          </div>
+          <div class="desk-object desk-quill">
+            <div class="desk-screen">📝 5W+1H EDITOR</div>
+            <div class="char-nametag">3. QUILL (EDITOR)</div>
+          </div>
+        </div>
+
+        <!-- 5. SENTINEL (AUDITOR) -->
+        <div class="workstation" id="ws-sentinel">
+          <div class="speech-bubble" id="bubble-sentinel">Sistem audit kualitas aktif.</div>
+          <div class="character-sprite sprite-sentinel">
+            <div class="pixel-char">🛡️</div>
+          </div>
+          <div class="desk-object desk-sentinel">
+            <div class="desk-screen">🔍 QA & FACT-CHECK</div>
+            <div class="char-nametag">4. SENTINEL (QA)</div>
+          </div>
+        </div>
+
+        <!-- 6. PRESS (TELEGRAM PUBLISHER) -->
+        <div class="workstation" id="ws-press">
+          <div class="speech-bubble" id="bubble-press">Koneksi Telegram bot terhubung.</div>
+          <div class="character-sprite sprite-press">
+            <div class="pixel-char">📱</div>
+          </div>
+          <div class="desk-object desk-press">
+            <div class="desk-screen">🚀 DISPATCHER</div>
+            <div class="char-nametag">5. PRESS (LAYOUT)</div>
+          </div>
+        </div>
+
+        <!-- 7. NEXUS (GITHUB & VERCEL DEVOPS) -->
+        <div class="workstation" id="ws-nexus">
+          <div class="speech-bubble" id="bubble-nexus">Vercel & GitHub sync standby.</div>
+          <div class="character-sprite sprite-nexus">
+            <div class="pixel-char">▲</div>
+          </div>
+          <div class="desk-object desk-nexus">
+            <div class="desk-screen">☁️ VERCEL SYNC</div>
+            <div class="char-nametag">6. NEXUS (DEVOPS)</div>
+          </div>
+        </div>
+
+        <!-- 8. BOSS DESK (USER) -->
+        <div class="workstation boss-corner" id="ws-boss">
+          <div class="speech-bubble boss-bubble">Monitoring live performance! ☕</div>
+          <div class="character-sprite sprite-boss">
+            <div class="pixel-char">💼</div>
+          </div>
+          <div class="desk-object desk-boss">
+            <div class="desk-screen boss-screen">👑 BOSS DESK</div>
+            <div class="char-nametag">BOSS (YOU)</div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- BOTTOM LIVE LOGS & TELEGRAM SIMULATOR -->
+    <section class="bottom-dashboard">
+      <!-- PANEL 1: TELEGRAM LIVE SIMULATOR -->
+      <div class="card-panel telegram-panel">
+        <div class="panel-header">
+          <span class="panel-title">📱 TELEGRAM LIVE FEED (@EmsaHermesBot)</span>
+          <span class="tg-chat-target">Chat ID: 7723304444</span>
+        </div>
+        <div class="telegram-chat-window" id="tg-messages-container">
+          <div class="tg-placeholder">Menunggu siaran berita terkini...</div>
+        </div>
+      </div>
+
+      <!-- PANEL 2: CURATED NEWSFEED & TAKEAWAYS -->
+      <div class="card-panel news-panel">
+        <div class="panel-header">
+          <span class="panel-title">📰 BERITA TERKURASI TERAKHIR (100% BAHASA INDONESIA)</span>
+          <span class="badge-filter">3 Kategori Utama</span>
+        </div>
+        <div class="news-list" id="curated-news-list">
+          <div class="empty-state">Belum ada siklus berita yang dijalankan. Klik "RUN NEWS CYCLE NOW" di atas.</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

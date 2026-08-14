@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "public": true,
+  "cleanUrls": true,
+  "routes": [
+    {
+      "src": "/api/state",
+      "dest": "/data/state.json"
+    },
+    {
+      "src": "/api/news",
+      "dest": "/data/news.json"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}
