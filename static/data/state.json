@@ -14,9 +14,9 @@
       "action": "walking_to_babel"
     },
     "babel": {
-      "status": "active",
-      "speech": "Mengonversi Times of India World -> 100% Bahasa Indonesia...",
-      "action": "working"
+      "status": "done",
+      "speech": "100% Bahasa Indonesia selesai.",
+      "action": "walking_to_quill"
     },
     "quill": {
       "status": "done",
@@ -35,6 +35,51 @@
     }
   },
   "latest_news": [
+    {
+      "category": "Ekonomi",
+      "title": "India Incar Kesepakatan Berbagi Data dengan AS untuk Memperketat Pemberantasan Konten Pelecehan Seksual Anak",
+      "source": "The Economic Times (IndiaTimes)",
+      "url": "https://economictimes.indiatimes.com/news/india/india-eyes-data-sharing-pact-with-us-to-tighten-csam-crackdown/articleshow/133249836.cms",
+      "pub_date": "15 Agu 2026, 01:10 WIB",
+      "tldr": "India mendorong perjanjian berbagi data dengan AS agar laporan konten pelecehan seksual anak dari platform media sosial dapat ditindak lebih cepat, mengingat keterlambatan CyberTipline NCMEC dalam meneruskan laporan ke otoritas India.",
+      "points": [
+        "Platform media sosial AS umumnya melaporkan konten pelecehan anak ke NCMEC karena batasan hukum, bukan langsung ke India.",
+        "Keterlambatan CyberTipline NCMEC dalam menyampaikan laporan ke India menjadi hambatan utama investigasi.",
+        "Para ahli mengusulkan pembagian metadata sementara serta dialog kolaboratif antara platform, NCMEC, dan I4C untuk mempercepat penanganan."
+      ],
+      "impact": "Jika kesepakatan tercapai, investigasi konten pelecehan anak di India bisa berjalan lebih cepat dan efektif, memperkuat perlindungan anak serta penegakan hukum lintas negara.",
+      "time": "01:22 WIB"
+    },
+    {
+      "category": "Kesehatan",
+      "title": "Unit Eugia Pharma di Telangana, Anak Usaha Aurobindo Pharma, Terima Surat Peringatan dari Badan Pengawas Obat dan Makanan AS",
+      "source": "Economic Times Health (IndiaTimes)",
+      "url": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/aurobindo-pharma-arm-eugia-pharmas-telangana-unit-gets-warning-letter-from-usfda/articleshow/133233489.cms",
+      "pub_date": "14 Agu 2026, 15:32 WIB",
+      "tldr": "Aurobindo Pharma mengumumkan bahwa anak usahanya, Eugia Pharma, menerima surat peringatan dari Badan Pengawas Obat dan Makanan Amerika Serikat setelah inspeksi fasilitas produksi di Telangana menghasilkan empat temuan. Perusahaan menegaskan bahwa pasokan pasar Amerika Serikat yang ada tidak terpengaruh oleh perkembangan ini.",
+      "points": [
+        "Eugia Pharma, anak usaha Aurobindo Pharma, menerima surat peringatan dari Badan Pengawas Obat dan Makanan Amerika Serikat terkait fasilitas produksi sediaan jadi di Telangana.",
+        "Inspeksi yang dilakukan Badan Pengawas Obat dan Makanan Amerika Serikat menghasilkan empat temuan dan status tindakan resmi yang diindikasikan.",
+        "Aurobindo Pharma menyatakan bahwa pasokan pasar Amerika Serikat yang ada tidak terpengaruh dan tetap berkomitmen mematuhi ketentuan Badan Pengawas Obat dan Makanan Amerika Serikat."
+      ],
+      "impact": "Surat peringatan ini dapat meningkatkan pengawasan Badan Pengawas Obat dan Makanan Amerika Serikat terhadap operasi Eugia Pharma serta berpotensi memengaruhi reputasi kepatuhan Aurobindo Pharma di pasar Amerika Serikat, meskipun pasokan saat ini disebut tetap aman. Langkah perbaikan yang dapat dipercaya akan menjadi kunci untuk menjaga kepercayaan otoritas pengawas dan mitra usaha.",
+      "time": "01:23 WIB"
+    },
+    {
+      "category": "Geopolitik",
+      "title": "Laba-laba Punggung Merah Jantan Berjungkir Balik Langsung Menuju Taring Betina saat Kawin",
+      "source": "Times of India World",
+      "url": "https://timesofindia.indiatimes.com/science/male-redback-spiders-somersault-directly-towards-a-females-fangs-during-mating-scientists-found-the-bizarre-behaviour-may-come-from-surprisingly-simple-genetics/articleshow/133245107.cms",
+      "pub_date": "14 Agu 2026, 23:00 WIB",
+      "tldr": "Penelitian terbaru menemukan bahwa perilaku jungkir balik laba-laba punggung merah jantan saat kawin dikendalikan oleh satu wilayah genetik yang diwariskan melalui kromosom X dan bersifat resesif. Adapun penyempitan perut dipengaruhi oleh banyak gen dan faktor lingkungan, yang menunjukkan kompleksitas sifat genetik yang berbeda.",
+      "points": [
+        "Perilaku jungkir balik laba-laba punggung merah jantan menuju taring betina dikendalikan oleh satu wilayah genetik spesifik.",
+        "Sifat jungkir balik ini bersifat resesif dan terkait dengan kromosom X, berdasarkan hasil persilangan percobaan.",
+        "Penyempitan perut tidak diatur oleh satu gen tunggal, melainkan oleh kombinasi beberapa gen dan kondisi lingkungan."
+      ],
+      "impact": "Temuan ini menantang anggapan tradisional tentang kompleksitas genetik dan membuka wawasan baru tentang bagaimana perilaku reproduksi ekstrem dapat diwariskan, sekaligus memperdalam pemahaman tentang evolusi sifat genetik pada spesies dengan sistem perkawinan unik.",
+      "time": "01:23 WIB"
+    },
     {
       "category": "Ekonomi",
       "title": "India Mengupayakan Kesepakatan Berbagi Data dengan Amerika Serikat untuk Memperketat Pemberantasan Konten Pelecehan Seksual Anak",
